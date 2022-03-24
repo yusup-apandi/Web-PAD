@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Font Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar Section -->
+    <nav class="navbar fixed-top sticky-top d-flex" style="padding-top: 18px;
+	padding-bottom: 18px;
+	padding-left: 40px;
+	padding-right: 40px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(20px);">
+        <a class="navbar-brand flex-fill" href="./index.html">
+            <img src="assets/images/logo.png" width="auto" height="41" class="d-inline-block align-top" alt="">
+        </a>
+        <div class="flex-fill">
+            <h2>TARGET REALISASI PAJAK DAERAH</h2>
+            <h5>BADAN PENDAPATAN DAERAH KABUPATEN SUMEDANG</>
+        </div>
+        <div class="flex-fill"></div>
+    </nav>
+
+    <!-- Section Card Atas -->
+    <section id="up">
+        <div class="row d-flex">
+            <div class="col-xl-5 col-md-12 col-sm-12 flex-fill" style="max-height: 364px;">
+                <div class="card shadow h-100 py-2 " style=" padding-left: 14px;
+                            padding-top: 14px;
+                            padding-bottom: 14px;
+                            padding-right: 14px;
+                            border-left: 0.25rem solid #467E78!important;
+                            ">
+
+                    <h5>Diagram Realisasi</h5>
+                    <div class="card-body align-items-center">
+                        <canvas id="Realisasi" width="auto" height="auto"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-12 col-sm-12 flex-fill">
+                <div class="card shadow h-100 py-2" style="border-left: 0.25rem solid #467E78!important;">
+                    <div class="card-body" style="
+                            padding-left: 14px;
+                            padding-top: 14px;
+                            padding-bottom: 14px;
+                            padding-right: 0px;
+                        ">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <h5 class="heading-color">Restoran</h5>
+                                <div class="d-flex flex-column" style="align-items: flex-start; padding: 0px">
+                                    <div class="p p-1 text-color">Target:</div>
+                                    <div class="p p-1 primary">Rp. 2,125,000</div>
+                                </div>
+                                <div class="flex-column">
+                                    <div class="p p-1 text-color">Realisasi:</div>
+                                    <div class="p p-1 primary ">Rp. 0 (0.00%)</div>
+                                </div>
+                                <div class="flex-column">
+                                    <div class="p p-1 text-color">Realisasi Hari Ini:</div>
+                                    <div class="p p-1 primary">Rp. 0 (0.00%)</div>
+                                </div>
+                                <div class="flex-column">
+                                    <div class="p p-1 text-color">Sisa target:</div>
+                                    <div class="p p-1 danger">Rp. 20,125,000,000 (100%)</div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <img src="assets/icon/Restorant.svg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-12 col-sm-12 flex-fill flex-column align-self-start ">
+                <div class="col-12">
+                    <!--Card -->
+                    <div class="card shadow h-100 py-2" style="border-left: 0.25rem solid #467E78!important;">
+                        <div class="card-body" style="
+                            padding-left: 14px;
+                            padding-top: 4px;
+                            padding-bottom: 4px;
+                            padding-right: 0px;
+                        ">
+                            <div class="row no-gutters">
+                                <div class="col mr-2">
+                                    <h5 class="heading-color">Restoran</h5>
+                                    <table class="table table-borderless tabel-card">
+                                        <tr>
+                                            <td class="p text-color">Target</td>
+                                            <td class="p primary">Rp. 2,125,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p text-color">Realisasi</td>
+                                            <td class="p primary">Rp. 0 (0.00%)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p text-color">Realisasi Hari Ini</td>
+                                            <td class="p primary">Rp. 0 (0.00%)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p text-color">Sisa target</td>
+                                            <td class="p primary">Rp. 20,125,000,000 (100%)</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="col-auto">
+                                    <img src="assets/icon/Restorant.svg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Card Kedua-->
+                <div class="col-12">
+                    <div class="card shadow h-100 py-2" style="border-left: 0.25rem solid #467E78!important;">
+                        <div class="card-body" style="
+                            padding-left: 14px;
+                            padding-top: 4px;
+                            padding-bottom: 4px;
+                            padding-right: 0px;
+                        ">
+                            <div class="row no-gutters">
+                                <div class="col mr-2">
+                                    <h5 class="heading-color">Restoran</h5>
+                                    <table class="table table-borderless tabel-card">
+                                        <tr>
+                                            <td class="p text-color">Target</td>
+                                            <td class="p primary">Rp. 2,125,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p text-color">Realisasi</td>
+                                            <td class="p primary">Rp. 0 (0.00%)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p text-color">Realisasi Hari Ini</td>
+                                            <td class="p primary">Rp. 0 (0.00%)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p text-color">Sisa target</td>
+                                            <td class="p primary">Rp. 20,125,000,000 (100%)</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="col-auto">
+                                    <img src="assets/icon/Restorant.svg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Card Bawah -->
+    <section id="down">
+        <div class="row">
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card shadow h-100 py-2" style="border-left: 0.25rem solid #467E78!important;">
+                    <div class="card-body" style="
+                            padding-left: 14px;
+                            padding-top: 14px;
+                            padding-bottom: 14px;
+                            padding-right: 0px;
+                        ">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <h5>Restoran</h5>
+                                <div class="d-flex flex-column">
+                                    <div class="p-2">Target</div>
+                                    <div class="p-1">Rp. 2,125,000</div>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <div class="p-2">Realisasi</div>
+                                    <div class="p-1">Rp. 0 (0.00%)</div>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <div class="p-2">Realisasi Hari Ini</div>
+                                    <div class="p-1">Rp. 0 (0.00%)</div>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <div class="p-2">Sisa target</div>
+                                    <div class="p-1">Rp. 20,125,000,000 (100%)</div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <img src="assets/icon/Restorant.svg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card shadow h-100 py-2" style="border-left: 0.25rem solid #467E78!important;">
+                    <div class="card-body" style="
+                            padding-left: 14px;
+                            padding-top: 14px;
+                            padding-bottom: 14px;
+                            padding-right: 0px;
+                        ">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <h5>Restoran</h5>
+                                <div class="d-flex flex-column">
+                                    <div class="p-2">Target</div>
+                                    <div class="p-1">Rp. 2,125,000</div>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <div class="p-2">Realisasi</div>
+                                    <div class="p-1">Rp. 0 (0.00%)</div>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <div class="p-2">Realisasi Hari Ini</div>
+                                    <div class="p-1">Rp. 0 (0.00%)</div>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <div class="p-2">Sisa target</div>
+                                    <div class="p-1">Rp. 20,125,000,000 (100%)</div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <img src="assets/icon/Restorant.svg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card shadow h-100 py-2" style="border-left: 0.25rem solid #467E78!important;">
+                    <div class="card-body" style="
+                            padding-left: 14px;
+                            padding-top: 14px;
+                            padding-bottom: 14px;
+                            padding-right: 0px;
+                        ">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <h5>Restoran</h5>
+                                <div class="d-flex flex-column">
+                                    <div class="p-2">Target</div>
+                                    <div class="p-1">Rp. 2,125,000</div>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <div class="p-2">Realisasi</div>
+                                    <div class="p-1">Rp. 0 (0.00%)</div>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <div class="p-2">Realisasi Hari Ini</div>
+                                    <div class="p-1">Rp. 0 (0.00%)</div>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <div class="p-2">Sisa target</div>
+                                    <div class="p-1">Rp. 20,125,000,000 (100%)</div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <img src="assets/icon/Restorant.svg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card shadow h-100 py-2" style="border-left: 0.25rem solid #467E78!important;">
+                    <div class="card-body" style="
+                            padding-left: 14px;
+                            padding-top: 14px;
+                            padding-bottom: 14px;
+                            padding-right: 0px;
+                        ">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <h5>Restoran</h5>
+                                <div class="d-flex flex-column">
+                                    <div class="p-2">Target</div>
+                                    <div class="p-1">Rp. 2,125,000</div>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <div class="p-2">Realisasi</div>
+                                    <div class="p-1">Rp. 0 (0.00%)</div>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <div class="p-2">Realisasi Hari Ini</div>
+                                    <div class="p-1">Rp. 0 (0.00%)</div>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <div class="p-2">Sisa target</div>
+                                    <div class="p-1">Rp. 20,125,000,000 (100%)</div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <img src="assets/icon/Restorant.svg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--JS-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <script>
+        const ctx = document.getElementById('Realisasi');
+        const myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['PBB', 'BPHTB', 'Restoran', 'Hotel', 'Hiburan', 'Reklame', 'Penerangan', 'Minerba',
+                    'Parkir',
+                    'Air Tanah', 'Burung Walet'
+                ],
+                datasets: [{
+                    label: 'Realisasi Pajak',
+                    data: [12, 19, 3, 5, 2, 3, 7, 8, 9, 10, 11],
+                    backgroundColor: [
+                        '#549276',
+                        '#34566f',
+                        '#467e78',
+                        '#e28970',
+                        '#747582',
+                        '#378899',
+                        '#437a86',
+                        '#2a504e',
+                        '#587b9e',
+                        '#59999d',
+                        '#da9d6a'
+
+                    ],
+                    borderColor: [
+                        '#549276',
+                        '#34566f',
+                        '#467e78',
+                        '#e28970',
+                        '#747582',
+                        '#378899',
+                        '#437a86',
+                        '#2a504e',
+                        '#587b9e',
+                        '#59999d',
+                        '#da9d6a'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

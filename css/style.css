@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+* {
+	margin: 40;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+}
+body {
+	background: #fafafa;
+}
+
+/*--------------------------------------------------------------
+# Color
+--------------------------------------------------------------*/
+.primary {
+	color: #00a65a;
+}
+.danger {
+	color: #f44336;
+}
+.text-color {
+	color: #6c757d;
+}
+.heading-color {
+	color: #152536;
+}
+.pbb {
+	background: #549276;
+}
+.bphtb {
+	background: #34566f;
+}
+.restoran {
+	background: #467e78;
+}
+.hotel {
+	background: #e28970;
+}
+.hiburan {
+	background: #747582;
+}
+.reklame {
+	background: #378899;
+}
+.penerangan {
+	background: #437a86;
+}
+.minerba {
+	background: #2a504e;
+}
+.parkir {
+	background: #587b9e;
+}
+.airtanah {
+	background: #59999d;
+}
+.burungwalet {
+	background: #da9d6a;
+}
+/*--------------------------------------------------------------
+# font Sizes
+--------------------------------------------------------------*/
+
+.h2 {
+	font-family: Inter;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 39px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+
+.h5 {
+	//styleName: Semi Bold/H5;
+	font-family: Inter;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 24px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+.p {
+	//styleName: Deskription card text;
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 19px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+/*--------------------------------------------------------------
+# Section UP & DOWN
+--------------------------------------------------------------*/
+#up {
+	margin-top: 24px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+#down {
+	margin-top: 24px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+/*--------------------------------------------------------------
+# Card
+----------------------------------------------------------*/
+.tabel-card tr td {
+	padding: 4px;
+}
