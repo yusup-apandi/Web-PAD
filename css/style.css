@@ -30,31 +30,8 @@ body {
 # font Sizes
 --------------------------------------------------------------*/
 
-.h2 {
-	font-family: Inter;
-	font-size: 32px;
-	font-style: normal;
-	font-weight: 600;
-	line-height: 39px;
-	letter-spacing: 0em;
-	text-align: left;
-	color: #152536;
-}
-
-.h5 {
-	//styleName: Semi Bold/H5;
-	font-family: Inter;
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 600;
-	line-height: 24px;
-	letter-spacing: 0em;
-	text-align: left;
-	color: #6c757d;
-}
 .p {
-	//styleName: Deskription card text;
-	font-family: Inter;
+	font-family: 'Inter';
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 600;
@@ -65,14 +42,7 @@ body {
 /*--------------------------------------------------------------
 # Section UP & DOWN
 --------------------------------------------------------------*/
-#up {
-	margin-top: 24px;
-	margin-left: 40px;
-	margin-right: 40px;
-}
-
-#down {
-	margin-top: 24px;
+#main {
 	margin-left: 40px;
 	margin-right: 40px;
 }
@@ -80,11 +50,14 @@ body {
 # Card
 ----------------------------------------------------------*/
 .tabel-card tr td {
-	padding: 4px;
+	padding: 2px;
+}
+.table {
+	margin-bottom: 0px !important;
 }
 .card-custom {
-	padding-left: 14px;
-	padding-top: 14px;
-	padding-bottom: 14px;
+	padding-left: 8px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 	padding-right: 0px;
 }
