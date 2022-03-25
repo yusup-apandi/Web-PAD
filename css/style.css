@@ -25,39 +25,7 @@ body {
 .heading-color {
 	color: #152536;
 }
-.pbb {
-	background: #549276;
-}
-.bphtb {
-	background: #34566f;
-}
-.restoran {
-	background: #467e78;
-}
-.hotel {
-	background: #e28970;
-}
-.hiburan {
-	background: #747582;
-}
-.reklame {
-	background: #378899;
-}
-.penerangan {
-	background: #437a86;
-}
-.minerba {
-	background: #2a504e;
-}
-.parkir {
-	background: #587b9e;
-}
-.airtanah {
-	background: #59999d;
-}
-.burungwalet {
-	background: #da9d6a;
-}
+
 /*--------------------------------------------------------------
 # font Sizes
 --------------------------------------------------------------*/
@@ -70,6 +38,7 @@ body {
 	line-height: 39px;
 	letter-spacing: 0em;
 	text-align: left;
+	color: #152536;
 }
 
 .h5 {
@@ -81,6 +50,7 @@ body {
 	line-height: 24px;
 	letter-spacing: 0em;
 	text-align: left;
+	color: #6c757d;
 }
 .p {
 	//styleName: Deskription card text;
@@ -111,4 +81,10 @@ body {
 ----------------------------------------------------------*/
 .tabel-card tr td {
 	padding: 4px;
+}
+.card-custom {
+	padding-left: 14px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	padding-right: 0px;
 }
