@@ -21,102 +21,98 @@
 <body>
 
     <!-- Navbar Section -->
-    <nav class="navbar fixed-top sticky-top d-flex align-content-center" style="padding-top: 14px;
-	padding-bottom: 14px;
-	padding-left: 40px;
-	padding-right: 40px;
-    background-color: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(20px);">
-        <a class="navbar-brand flex-fill" href="./index.html">
-            <img src="assets/images/logo.png" width="auto" height="41" class="d-inline-block align-top" alt="">
-        </a>
-        <div class="flex-fill">
-            <h3 class="text-center">TARGET REALISASI PAJAK DAERAH</h3>
+    <nav class="navbar fixed-top sticky-top navbar-custom">
+
+        <div class="col-3">
+            <a class="navbar-brand flex-fill" href="./index.html">
+                <img src="assets/images/logo.png" width="auto" height="auto" class="d-inline-block align-top" alt="">
+            </a>
+        </div>
+
+        <div class="col-6">
+            <h3 class="text-center font-weight-bold heading-color ">TARGET REALISASI PAJAK DAERAH</h3>
             <h6 class="text-center">BADAN PENDAPATAN DAERAH KABUPATEN SUMEDANG</h6>
 
         </div>
-        <div class="flex-fill"></div>
-    </nav>
+        <div class="col-3"></div>
 
+
+    </nav>
     <section id="main">
         <div class="container-fluid">
             <div class="row d-flex">
 
                 <!--Card Bagian Atas-->
-                <div class="col-xl-5 col-md-12 col-sm-12  my-2">
-                    <div class="card shadow h-100 py-2 " style=" padding-left: 8px;
-                                padding-top: 8px;
-                                padding-bottom: 8px;
-                                padding-right: 8px;
-                                border-left: 0.25rem solid #467E78!important;
-                                ">
+                <div class="col-xl-5 col-md-12 col-sm-12  my-3">
+                    <div class="card h-100 py-2 card-custom">
 
-                        <h5>Diagram Realisasi</h5>
+                        <h5 class="heading-color  font-weight-bold">Diagram Realisasi</h5>
                         <div class="card-body align-items-center">
                             <canvas id="Realisasi" width="auto" height="auto"></canvas>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-12 col-sm-12  my-2">
-                    <div class="card shadow h-100 py-2" style="border-left: 0.25rem solid #549276!important;">
+                <div class="col-xl-3 col-md-12 col-sm-12  my-3">
+                    <div class="card h-100 py-2">
                         <div class="card-body card-custom">
                             <div class="row no-gutters">
-                                <div class="col">
-                                    <h5 class="heading-color">PBB</h5>
-                                    <div class="d-flex flex-column">
-                                        <div class="p p-1 text-color">Target:</div>
-                                        <div class="p p-1 primary">Rp. 2,125,000</div>
+                                <div class="col mr-2">
+                                    <h5 class="heading-color  font-weight-bold">Restoran</h5>
+                                    <div class="d-flex flex-column" style="align-items: flex-start; padding: 0px">
+                                        <div class="p text-color">Target:</div>
+                                        <div class="h5 primary  font-weight-bold">Rp. 2,125,000</div>
                                     </div>
                                     <div class="flex-column">
-                                        <div class="p p-1 text-color">Realisasi:</div>
-                                        <div class="p p-1 primary ">Rp. 0 (0.00%)</div>
+                                        <div class="p text-color">Realisasi:</div>
+                                        <div class="h5 primary  font-weight-bold ">Rp. 0 (0.00%)</div>
                                     </div>
                                     <div class="flex-column">
-                                        <div class="p p-1 text-color">Realisasi Hari Ini:</div>
-                                        <div class="p p-1 primary">Rp. 0 (0.00%)</div>
+                                        <div class="p text-color">Realisasi Hari Ini:</div>
+                                        <div class="h5 primary  font-weight-bold">Rp. 0 (0.00%)</div>
                                     </div>
                                     <div class="flex-column">
-                                        <div class="p p-1 text-color">Sisa target:</div>
-                                        <div class="p p-1 danger">Rp. 20,125,000,000 (100%)</div>
+                                        <div class="p text-color">Sisa target:</div>
+                                        <div class="h5 font-weight-bold danger">Rp. 20,125,000,000 (100%)</div>
                                     </div>
                                 </div>
                                 <div class="col-auto">
-                                    <img src="assets/icon/PBB.svg" alt="" class="img-fluid">
+                                    <img src="assets/icon/PBB.svg" alt="" class="img-custom">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-12 col-sm-12  my-2">
+                <div class="col-xl-4 col-md-12 col-sm-12  my-3">
                     <div class="row">
                         <div class="col-12 mb-1">
                             <!--Card Pertama-->
-                            <div class="card shadow h-100 py-2" style="border-left: 0.25rem solid #34566f!important;">
+                            <div class="card h-100 py-2">
                                 <div class="card-body card-custom">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col">
-                                            <h5 class="heading-color">BPHTB</h5>
+                                            <h5 class="heading-color font-weight-bold">BPHTB</h5>
                                             <table class="table table-borderless tabel-card">
                                                 <tr>
                                                     <td class="p text-color">Target:</td>
-                                                    <td class="p primary">Rp. 2,125,000</td>
+                                                    <td class="h5 primary font-weight-bold">Rp. 2,125,000</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="p text-color">Realisasi:</td>
-                                                    <td class="p primary">Rp. 0 (0.00%)</td>
+                                                    <td class="h5 primary font-weight-bold">Rp. 0 (0.00%)</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="p text-color">Realisasi Hari Ini:</td>
-                                                    <td class="p primary">Rp. 0 (0.00%)</td>
+                                                    <td class="h5 primary font-weight-bold">Rp. 0 (0.00%)</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="p text-color">Sisa target:</td>
-                                                    <td class="p danger">Rp. 20,125,000,000 (100%)</td>
+                                                    <td class="h5 danger font-weight-bold">Rp. 20,125,000,000 (100%)
+                                                    </td>
                                                 </tr>
                                             </table>
                                         </div>
                                         <div class="col-auto">
-                                            <img src="assets/icon/BPHTB.svg" alt="" class="img-fluid">
+                                            <img src="assets/icon/BPHTB.svg" alt="" class="img-custom">
                                         </div>
                                     </div>
                                 </div>
@@ -124,32 +120,33 @@
                         </div>
                         <!--Card Kedua-->
                         <div class="col-12 mt-1">
-                            <div class="card shadow h-100 py-2" style="border-left: 0.25rem solid #437a86!important;">
+                            <div class="card h-100 py-2">
                                 <div class="card-body card-custom">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col">
-                                            <h5 class="heading-color">Penerangan</h5>
+                                            <h5 class="heading-color font-weight-bold">Penerangan</h5>
                                             <table class="table table-borderless tabel-card">
                                                 <tr>
-                                                    <td class="p text-color">Target</td>
-                                                    <td class="p primary">Rp. 2,125,000</td>
+                                                    <td class="p text-color">Target:</td>
+                                                    <td class="h5 primary font-weight-bold">Rp. 2,125,000</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="p text-color">Realisasi</td>
-                                                    <td class="p primary">Rp. 0 (0.00%)</td>
+                                                    <td class="p text-color">Realisasi:</td>
+                                                    <td class="h5 primary font-weight-bold">Rp. 0 (0.00%)</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="p text-color">Realisasi Hari Ini</td>
-                                                    <td class="p primary">Rp. 0 (0.00%)</td>
+                                                    <td class="p text-color">Realisasi Hari Ini:</td>
+                                                    <td class="h5 primary font-weight-bold">Rp. 0 (0.00%)</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="p text-color">Sisa target</td>
-                                                    <td class="p danger">Rp. 20,125,000,000 (100%)</td>
+                                                    <td class="p text-color">Sisa target:</td>
+                                                    <td class="h5 danger font-weight-bold">Rp. 20,125,000,000 (100%)
+                                                    </td>
                                                 </tr>
                                             </table>
                                         </div>
                                         <div class="col-auto">
-                                            <img src="assets/icon/Penerangan.svg" alt="" class="img-fluid">
+                                            <img src="assets/icon/Penerangan.svg" alt="" class="img-custom">
                                         </div>
                                     </div>
                                 </div>
@@ -160,247 +157,242 @@
 
                 <!--Card Bagian Bawah-->
                 <!--Kolom Atas-->
-                <div class="col-xl-3 col-md-6 my-3">
-                    <div class="card shadow h-100 py-2" style="border-left: 0.25rem solid #467e78!important;">
+                <div class="col-xl-3 col-md-6 my-1">
+                    <div class="card  h-100 py-2">
                         <div class="card-body card-custom">
                             <div class="row no-gutters align-items-center">
                                 <div class="col mr-2">
-                                    <h5 class="heading-color">Restoran</h5>
+                                    <h5 class="heading-color  font-weight-bold">Restoran</h5>
                                     <div class="d-flex flex-column" style="align-items: flex-start; padding: 0px">
-                                        <div class="p p-1 text-color">Target:</div>
-                                        <div class="p p-1 primary">Rp. 2,125,000</div>
+                                        <div class="p text-color">Target:</div>
+                                        <div class="h5 primary  font-weight-bold">Rp. 2,125,000</div>
                                     </div>
                                     <div class="flex-column">
-                                        <div class="p p-1 text-color">Realisasi:</div>
-                                        <div class="p p-1 primary ">Rp. 0 (0.00%)</div>
+                                        <div class="p text-color">Realisasi:</div>
+                                        <div class="h5 primary  font-weight-bold ">Rp. 0 (0.00%)</div>
                                     </div>
                                     <div class="flex-column">
-                                        <div class="p p-1 text-color">Realisasi Hari Ini:</div>
-                                        <div class="p p-1 primary">Rp. 0 (0.00%)</div>
+                                        <div class="p text-color">Realisasi Hari Ini:</div>
+                                        <div class="h5 primary  font-weight-bold">Rp. 0 (0.00%)</div>
                                     </div>
                                     <div class="flex-column">
-                                        <div class="p p-1 text-color">Sisa target:</div>
-                                        <div class="p p-1 danger">Rp. 20,125,000,000 (100%)</div>
+                                        <div class="p text-color">Sisa target:</div>
+                                        <div class="h5 font-weight-bold danger">Rp. 20,125,000,000 (100%)</div>
                                     </div>
                                 </div>
                                 <div class="col-auto">
-                                    <img src="assets/icon/Restorant.svg" alt="" class="img-fluid">
+                                    <img src="assets/icon/Restorant.svg" alt="" class="img-custom">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-6 my-3">
-                    <div class="card shadow h-100 py-2" style="border-left: 0.25rem solid #59999d!important;">
+                <div class="col-xl-3 col-md-6 my-1">
+                    <div class="card h-100 py-2">
                         <div class="card-body card-custom">
                             <div class="row no-gutters align-items-center">
                                 <div class="col mr-2">
-                                    <h5 class="heading-color">Air Tanah</h5>
+                                    <h5 class="heading-color  font-weight-bold">Air Tanah</h5>
                                     <div class="d-flex flex-column" style="align-items: flex-start; padding: 0px">
-                                        <div class="p p-1 text-color">Target:</div>
-                                        <div class="p p-1 primary">Rp. 2,125,000</div>
+                                        <div class="p text-color">Target:</div>
+                                        <div class="h5 primary  font-weight-bold">Rp. 2,125,000</div>
                                     </div>
                                     <div class="flex-column">
-                                        <div class="p p-1 text-color">Realisasi:</div>
-                                        <div class="p p-1 primary ">Rp. 0 (0.00%)</div>
+                                        <div class="p text-color">Realisasi:</div>
+                                        <div class="h5 primary  font-weight-bold ">Rp. 0 (0.00%)</div>
                                     </div>
                                     <div class="flex-column">
-                                        <div class="p p-1 text-color">Realisasi Hari Ini:</div>
-                                        <div class="p p-1 primary">Rp. 0 (0.00%)</div>
+                                        <div class="p text-color">Realisasi Hari Ini:</div>
+                                        <div class="h5 primary  font-weight-bold">Rp. 0 (0.00%)</div>
                                     </div>
                                     <div class="flex-column">
-                                        <div class="p p-1 text-color">Sisa target:</div>
-                                        <div class="p p-1 danger">Rp. 20,125,000,000 (100%)</div>
+                                        <div class="p text-color">Sisa target:</div>
+                                        <div class="h5 font-weight-bold danger">Rp. 20,125,000,000 (100%)</div>
                                     </div>
                                 </div>
                                 <div class="col-auto">
-                                    <img src="assets/icon/Air Tanah.svg" alt="" class="img-fluid">
+                                    <img src="assets/icon/Air Tanah.svg" alt="" class="img-custom">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-6 my-3">
-                    <div class="card shadow h-100 py-2" style="border-left: 0.25rem solid #e28970!important;">
+                <div class="col-xl-3 col-md-6 my-1">
+                    <div class="card h-100 py-2">
                         <div class="card-body card-custom">
                             <div class="row no-gutters align-items-center">
                                 <div class="col mr-2">
-                                    <h5 class="heading-color">Hotel</h5>
+                                    <h5 class="heading-color  font-weight-bold">Hotel</h5>
                                     <div class="d-flex flex-column" style="align-items: flex-start; padding: 0px">
-                                        <div class="p p-1 text-color">Target:</div>
-                                        <div class="p p-1 primary">Rp. 2,125,000</div>
+                                        <div class="p text-color">Target:</div>
+                                        <div class="h5 primary  font-weight-bold">Rp. 2,125,000</div>
                                     </div>
                                     <div class="flex-column">
-                                        <div class="p p-1 text-color">Realisasi:</div>
-                                        <div class="p p-1 primary ">Rp. 0 (0.00%)</div>
+                                        <div class="p text-color">Realisasi:</div>
+                                        <div class="h5 primary  font-weight-bold ">Rp. 0 (0.00%)</div>
                                     </div>
                                     <div class="flex-column">
-                                        <div class="p p-1 text-color">Realisasi Hari Ini:</div>
-                                        <div class="p p-1 primary">Rp. 0 (0.00%)</div>
+                                        <div class="p text-color">Realisasi Hari Ini:</div>
+                                        <div class="h5 primary  font-weight-bold">Rp. 0 (0.00%)</div>
                                     </div>
                                     <div class="flex-column">
-                                        <div class="p p-1 text-color">Sisa target:</div>
-                                        <div class="p p-1 danger">Rp. 20,125,000,000 (100%)</div>
+                                        <div class="p text-color">Sisa target:</div>
+                                        <div class="h5 font-weight-bold danger">Rp. 20,125,000,000 (100%)</div>
                                     </div>
                                 </div>
                                 <div class="col-auto">
-                                    <img src="assets/icon/Hotel.svg" alt="" class="img-fluid">
+                                    <img src="assets/icon/Hotel.svg" alt="" class="img-custom">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-6 my-3">
-                    <div class="card shadow h-100 py-2" style="border-left: 0.25rem solid #747582!important;">
+                <div class="col-xl-3 col-md-6 my-1">
+                    <div class="card h-100 py-2">
                         <div class="card-body card-custom">
                             <div class="row no-gutters align-items-center">
                                 <div class="col mr-2">
-                                    <h5 class="heading-color">Hiburan</h5>
+                                    <h5 class="heading-color  font-weight-bold">Hiburan</h5>
                                     <div class="d-flex flex-column" style="align-items: flex-start; padding: 0px">
-                                        <div class="p p-1 text-color">Target:</div>
-                                        <div class="p p-1 primary">Rp. 2,125,000</div>
+                                        <div class="p text-color">Target:</div>
+                                        <div class="h5 primary  font-weight-bold">Rp. 2,125,000</div>
                                     </div>
                                     <div class="flex-column">
-                                        <div class="p p-1 text-color">Realisasi:</div>
-                                        <div class="p p-1 primary ">Rp. 0 (0.00%)</div>
+                                        <div class="p text-color">Realisasi:</div>
+                                        <div class="h5 primary  font-weight-bold ">Rp. 0 (0.00%)</div>
                                     </div>
                                     <div class="flex-column">
-                                        <div class="p p-1 text-color">Realisasi Hari Ini:</div>
-                                        <div class="p p-1 primary">Rp. 0 (0.00%)</div>
+                                        <div class="p text-color">Realisasi Hari Ini:</div>
+                                        <div class="h5 primary  font-weight-bold">Rp. 0 (0.00%)</div>
                                     </div>
                                     <div class="flex-column">
-                                        <div class="p p-1 text-color">Sisa target:</div>
-                                        <div class="p p-1 danger">Rp. 20,125,000,000 (100%)</div>
+                                        <div class="p text-color">Sisa target:</div>
+                                        <div class="h5 font-weight-bold danger">Rp. 20,125,000,000 (100%)</div>
                                     </div>
                                 </div>
                                 <div class="col-auto">
-                                    <img src="assets/icon/Hiburan.svg" alt="" class="img-fluid">
+                                    <img src="assets/icon/Hiburan.svg" alt="" class="img-custom">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!--Kolom Bawah-->
-                <div class="col-xl-3 col-md-6 my-3">
-                    <div class="card shadow h-100 py-2" style="border-left: 0.25rem solid #378899!important;">
-                        <div class="card-body" style="
-                                padding-left: 14px;
-                                padding-top: 14px;
-                                padding-bottom: 14px;
-                                padding-right: 0px;
-                            ">
+                <div class="col-xl-3 col-md-6 my-1">
+                    <div class="card h-100 py-2">
+                        <div class="card-body card-custom">
                             <div class="row no-gutters align-items-center">
                                 <div class="col mr-2">
-                                    <h5 class="heading-color">Reklame</h5>
+                                    <h5 class="heading-color  font-weight-bold">Reklame</h5>
                                     <div class="d-flex flex-column" style="align-items: flex-start; padding: 0px">
-                                        <div class="p p-1 text-color">Target:</div>
-                                        <div class="p p-1 primary">Rp. 2,125,000</div>
+                                        <div class="p text-color">Target:</div>
+                                        <div class="h5 primary  font-weight-bold">Rp. 2,125,000</div>
                                     </div>
                                     <div class="flex-column">
-                                        <div class="p p-1 text-color">Realisasi:</div>
-                                        <div class="p p-1 primary ">Rp. 0 (0.00%)</div>
+                                        <div class="p text-color">Realisasi:</div>
+                                        <div class="h5 primary  font-weight-bold ">Rp. 0 (0.00%)</div>
                                     </div>
                                     <div class="flex-column">
-                                        <div class="p p-1 text-color">Realisasi Hari Ini:</div>
-                                        <div class="p p-1 primary">Rp. 0 (0.00%)</div>
+                                        <div class="p text-color">Realisasi Hari Ini:</div>
+                                        <div class="h5 primary  font-weight-bold">Rp. 0 (0.00%)</div>
                                     </div>
                                     <div class="flex-column">
-                                        <div class="p p-1 text-color">Sisa target:</div>
-                                        <div class="p p-1 danger">Rp. 20,125,000,000 (100%)</div>
+                                        <div class="p text-color">Sisa target:</div>
+                                        <div class="h5 font-weight-bold danger">Rp. 20,125,000,000 (100%)</div>
                                     </div>
                                 </div>
                                 <div class="col-auto">
-                                    <img src="assets/icon/Reklame.svg" alt="" class="img-fluid">
+                                    <img src="assets/icon/Reklame.svg" alt="" class="img-custom">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-6 my-3">
-                    <div class="card shadow h-100 py-2" style="border-left: 0.25rem solid #2a504e!important;">
+                <div class="col-xl-3 col-md-6 my-1">
+                    <div class="card h-100 py-2">
                         <div class="card-body card-custom">
                             <div class="row no-gutters align-items-center">
                                 <div class="col mr-2">
-                                    <h5 class="heading-color">Minerba</h5>
+                                    <h5 class="heading-color  font-weight-bold">Minerba</h5>
                                     <div class="d-flex flex-column" style="align-items: flex-start; padding: 0px">
-                                        <div class="p p-1 text-color">Target:</div>
-                                        <div class="p p-1 primary">Rp. 2,125,000</div>
+                                        <div class="p text-color">Target:</div>
+                                        <div class="h5 primary  font-weight-bold">Rp. 2,125,000</div>
                                     </div>
                                     <div class="flex-column">
-                                        <div class="p p-1 text-color">Realisasi:</div>
-                                        <div class="p p-1 primary ">Rp. 0 (0.00%)</div>
+                                        <div class="p text-color">Realisasi:</div>
+                                        <div class="h5 primary  font-weight-bold ">Rp. 0 (0.00%)</div>
                                     </div>
                                     <div class="flex-column">
-                                        <div class="p p-1 text-color">Realisasi Hari Ini:</div>
-                                        <div class="p p-1 primary">Rp. 0 (0.00%)</div>
+                                        <div class="p text-color">Realisasi Hari Ini:</div>
+                                        <div class="h5 primary  font-weight-bold">Rp. 0 (0.00%)</div>
                                     </div>
                                     <div class="flex-column">
-                                        <div class="p p-1 text-color">Sisa target:</div>
-                                        <div class="p p-1 danger">Rp. 20,125,000,000 (100%)</div>
+                                        <div class="p text-color">Sisa target:</div>
+                                        <div class="h5 font-weight-bold danger">Rp. 20,125,000,000 (100%)</div>
                                     </div>
                                 </div>
                                 <div class="col-auto">
-                                    <img src="assets/icon/Mineral.svg" alt="" class="img-fluid">
+                                    <img src="assets/icon/Mineral.svg" alt="" class="img-custom">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-6 my-3">
-                    <div class="card shadow h-100 py-2" style="border-left: 0.25rem solid #da9d6a!important;">
+                <div class="col-xl-3 col-md-6 my-1">
+                    <div class="card h-100 py-2">
                         <div class="card-body card-custom">
                             <div class="row no-gutters align-items-center">
                                 <div class="col mr-2">
-                                    <h5 class="heading-color">Sarang Burung Walet</h5>
+                                    <h5 class="heading-color  font-weight-bold">Minerba</h5>
                                     <div class="d-flex flex-column" style="align-items: flex-start; padding: 0px">
-                                        <div class="p p-1 text-color">Target:</div>
-                                        <div class="p p-1 primary">Rp. 2,125,000</div>
+                                        <div class="p text-color">Target:</div>
+                                        <div class="h5 primary  font-weight-bold">Rp. 2,125,000</div>
                                     </div>
                                     <div class="flex-column">
-                                        <div class="p p-1 text-color">Realisasi:</div>
-                                        <div class="p p-1 primary ">Rp. 0 (0.00%)</div>
+                                        <div class="p text-color">Realisasi:</div>
+                                        <div class="h5 primary  font-weight-bold ">Rp. 0 (0.00%)</div>
                                     </div>
                                     <div class="flex-column">
-                                        <div class="p p-1 text-color">Realisasi Hari Ini:</div>
-                                        <div class="p p-1 primary">Rp. 0 (0.00%)</div>
+                                        <div class="p text-color">Realisasi Hari Ini:</div>
+                                        <div class="h5 primary  font-weight-bold">Rp. 0 (0.00%)</div>
                                     </div>
                                     <div class="flex-column">
-                                        <div class="p p-1 text-color">Sisa target:</div>
-                                        <div class="p p-1 danger">Rp. 20,125,000,000 (100%)</div>
+                                        <div class="p text-color">Sisa target:</div>
+                                        <div class="h5 font-weight-bold danger">Rp. 20,125,000,000 (100%)</div>
                                     </div>
                                 </div>
                                 <div class="col-auto">
-                                    <img src="assets/icon/Wallet.svg" alt="" class="img-fluid">
+                                    <img src="assets/icon/Wallet.svg" alt="" class="img-custom">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-6 my-3">
-                    <div class="card shadow h-100 py-2" style="border-left: 0.25rem solid #587b9e!important;">
+                <div class="col-xl-3 col-md-6 my-1">
+                    <div class="card h-100 py-2">
                         <div class="card-body card-custom">
                             <div class="row no-gutters align-items-center">
                                 <div class="col mr-2">
-                                    <h5 class="heading-color">Parkir</h5>
+                                    <h5 class="heading-color  font-weight-bold">Parkir</h5>
                                     <div class="d-flex flex-column" style="align-items: flex-start; padding: 0px">
-                                        <div class="p p-1 text-color">Target:</div>
-                                        <div class="p p-1 primary">Rp. 2,125,000</div>
+                                        <div class="p text-color">Target:</div>
+                                        <div class="h5 primary  font-weight-bold">Rp. 2,125,000</div>
                                     </div>
                                     <div class="flex-column">
-                                        <div class="p p-1 text-color">Realisasi:</div>
-                                        <div class="p p-1 primary ">Rp. 0 (0.00%)</div>
+                                        <div class="p text-color">Realisasi:</div>
+                                        <div class="h5 primary  font-weight-bold ">Rp. 0 (0.00%)</div>
                                     </div>
                                     <div class="flex-column">
-                                        <div class="p p-1 text-color">Realisasi Hari Ini:</div>
-                                        <div class="p p-1 primary">Rp. 0 (0.00%)</div>
+                                        <div class="p text-color">Realisasi Hari Ini:</div>
+                                        <div class="h5 primary  font-weight-bold">Rp. 0 (0.00%)</div>
                                     </div>
                                     <div class="flex-column">
-                                        <div class="p p-1 text-color">Sisa target:</div>
-                                        <div class="p p-1 danger">Rp. 20,125,000,000 (100%)</div>
+                                        <div class="p text-color">Sisa target:</div>
+                                        <div class="h5 font-weight-bold danger">Rp. 20,125,000,000 (100%)</div>
                                     </div>
                                 </div>
                                 <div class="col-auto">
-                                    <img src="assets/icon/parkir.svg" alt="" class="img-fluid">
+                                    <img src="assets/icon/parkir.svg" alt="" class="img-custom">
                                 </div>
                             </div>
                         </div>
