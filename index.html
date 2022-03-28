@@ -21,22 +21,22 @@
 <body>
 
     <!-- Navbar Section -->
-    <nav class="navbar fixed-top sticky-top navbar-custom">
+    <nav class="navbar fixed-top sticky-top navbar-expand-lg navbar-custom">
+        <div class="row container-fluid">
+            <div class="col-12 col-md-12 col-lg-3 d-flex d-md-flex d-sm-flex justify-content-center">
+                <a class="navbar-brand " href="./index.html">
+                    <img src="assets/images/logo.png" width="auto" height="auto" class="d-inline-block align-top"
+                        alt="">
+                </a>
+            </div>
 
-        <div class="col-3">
-            <a class="navbar-brand flex-fill" href="./index.html">
-                <img src="assets/images/logo.png" width="auto" height="auto" class="d-inline-block align-top" alt="">
-            </a>
+            <div class="col-12 col-md-12 col-lg-6">
+                <h3 class="text-center font-weight-bold heading-color ">TARGET REALISASI PAJAK DAERAH</h3>
+                <h6 class="text-center">BADAN PENDAPATAN DAERAH KABUPATEN SUMEDANG</h6>
+
+            </div>
+            <div class="col-12 col-md-12 col-lg-3"></div>
         </div>
-
-        <div class="col-6">
-            <h3 class="text-center font-weight-bold heading-color ">TARGET REALISASI PAJAK DAERAH</h3>
-            <h6 class="text-center">BADAN PENDAPATAN DAERAH KABUPATEN SUMEDANG</h6>
-
-        </div>
-        <div class="col-3"></div>
-
-
     </nav>
     <section id="main">
         <div class="container-fluid">
@@ -44,11 +44,29 @@
 
                 <!--Card Bagian Atas-->
                 <div class="col-xl-5 col-md-12 col-sm-12  my-3">
-                    <div class="card h-100 py-2 card-custom">
-
-                        <h5 class="heading-color  font-weight-bold">Diagram Realisasi</h5>
-                        <div class="card-body align-items-center">
-                            <canvas id="Realisasi" width="auto" height="auto"></canvas>
+                    <div class="card h-100 py-2">
+                        <div class="card-body card-custom ">
+                            <div class="row no-gutters">
+                                <div class="col mr-2 ">
+                                    <h5 class="heading-color  font-weight-bold">Total Target PAD</h5>
+                                    <div class="d-flex flex-column" style="align-items: flex-start; padding: 0px">
+                                        <div class="p text-color">Total Target:</div>
+                                        <div class="h5 primary  font-weight-bold">Rp. 2,125,000</div>
+                                    </div>
+                                    <div class="flex-column">
+                                        <div class="p text-color">Total Realisasi:</div>
+                                        <div class="h5 primary  font-weight-bold ">Rp. 0 (0.00%)</div>
+                                    </div>
+                                    <div class="flex-column">
+                                        <div class="p text-color">Total Realisasi Hari Ini:</div>
+                                        <div class="h5 primary  font-weight-bold">Rp. 0 (0.00%)</div>
+                                    </div>
+                                    <div class="flex-column">
+                                        <div class="p text-color">Total Sisa target:</div>
+                                        <div class="h5 font-weight-bold danger">Rp. 20,125,000,000 (100%)</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -405,59 +423,7 @@
     <!--JS-->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
-    <script>
-        const ctx = document.getElementById('Realisasi');
-        const myChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ['PBB', 'BPHTB', 'Restoran', 'Hotel', 'Hiburan', 'Reklame', 'Penerangan', 'Minerba',
-                    'Parkir',
-                    'Air Tanah', 'Burung Walet'
-                ],
-                datasets: [{
-                    label: 'Realisasi Pajak',
-                    data: [12, 19, 3, 5, 2, 3, 7, 8, 9, 10, 11],
-                    backgroundColor: [
-                        '#549276',
-                        '#34566f',
-                        '#467e78',
-                        '#e28970',
-                        '#747582',
-                        '#378899',
-                        '#437a86',
-                        '#2a504e',
-                        '#587b9e',
-                        '#59999d',
-                        '#da9d6a'
 
-                    ],
-                    borderColor: [
-                        '#549276',
-                        '#34566f',
-                        '#467e78',
-                        '#e28970',
-                        '#747582',
-                        '#378899',
-                        '#437a86',
-                        '#2a504e',
-                        '#587b9e',
-                        '#59999d',
-                        '#da9d6a'
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                },
-                maintainAspectRatio: false,
-            }
-        });
-    </script>
 </body>
 
 </html>
