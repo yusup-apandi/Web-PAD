@@ -129,6 +129,9 @@ h6 {
 .heading-color {
 	color: #152536;
 }
+.white {
+	color: #fefefe;
+}
 
 /*--------------------------------------------------------------
 # Background Color
@@ -202,6 +205,11 @@ h6 {
 	color: #fefefe;
 	text-align: center;
 	border-radius: 12px 12px 0px 0px !important;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+.card-body {
+	padding: 10px;
 }
 .card-custom {
 	padding: 0px !important;
